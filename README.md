@@ -1,14 +1,6 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-## About Task
-Jumia wants to build a fleet-management system (bus-booking system) Having:  
-- Egypt cities as stations [Cairo, Giza, AlFayyum, AlMinya, Asyut...].
-  - Predefined trips between 2 stations that cross over in-between stations
-  - ex: Cairo to Asyut trip that crosses over AlFayyum -firstly- then AlMinya
-- Bus for each trip, each bus has 12 available seats to be booked by users, each seat has an
-unique id.
-- Users can book an available trip seat.
-
+## Bus-booking system
 ## Prerequisite Before Initialization
 
 - You should ensure that your web server has the following minimum PHP version and extensions:
