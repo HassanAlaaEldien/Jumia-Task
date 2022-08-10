@@ -31,6 +31,7 @@
 
 ## Application Testing Steps
 
+- Database dump with proper data to be tested included in project files. 
 - Postman collection included in project files, or you can open this sharable link to import collection and try the app
   - https://www.getpostman.com/collections/ea28d5a41409ebf328c1
 - Project get initialized with these cities to try [1 => 'Cairo',2 => 'Giza',3 => 'AlFayyum',4 => 'AlMinya']
