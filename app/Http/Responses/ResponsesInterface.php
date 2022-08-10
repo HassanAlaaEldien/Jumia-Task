@@ -72,6 +72,15 @@ interface ResponsesInterface
     public function respondWithResourceDeletedSuccessfully(string $resourceName);
 
     /**
+     * Respond with a message showing that the desired resource has been created successfully.
+     *
+     * @param string $resourceName
+     *
+     * @return mixed
+     */
+    public function respondWithResourceCreatedSuccessfully(string $resourceName);
+
+    /**
      * Respond with paginated data.
      *
      * @param LengthAwarePaginator $items

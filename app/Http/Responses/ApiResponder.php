@@ -113,7 +113,21 @@ class ApiResponder implements ResponsesInterface
      */
     public function respondWithResourceDeletedSuccessfully(string $resourceName)
     {
-        return $this->respond(['message' => "{$resourceName} has been deleted successfully"]);
+        return $this->setStatusCode(204)
+            ->respond(['message' => "{$resourceName} has been deleted successfully"]);
+    }
+
+    /**
+     * Respond with a message showing that the desired resource has been deleted successfully.
+     *
+     * @param string $resourceName
+     *
+     * @return mixed
+     */
+    public function respondWithResourceCreatedSuccessfully(string $resourceName)
+    {
+        return $this->setStatusCode(201)
+            ->respond(['message' => "{$resourceName} has been stored successfully"]);
     }
 
     /**

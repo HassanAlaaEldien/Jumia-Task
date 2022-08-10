@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\Auth\AuthenticationController;
+use App\Http\Controllers\API\ReservationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,6 @@ Route::controller(AuthenticationController::class)->group(function () {
     Route::post('logout', 'logout');
     Route::post('refresh', 'refresh');
 });
+
+// Ticketing Routes.
+Route::resource('tickets', ReservationController::class)->only(['index', 'store']);
