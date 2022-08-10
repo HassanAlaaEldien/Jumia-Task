@@ -76,7 +76,7 @@ class TaskInitialization extends Command
      */
     public function seedLinesTable()
     {
-        Line::create(['name' => 'Cairo => Asyut', 'seats' => 4]);
+        Line::create(['name' => 'Cairo => AlMinya', 'seats' => 4]);
 
         $this->line('<comment>Lines Table Seeded Successfully.</comment>');
     }
